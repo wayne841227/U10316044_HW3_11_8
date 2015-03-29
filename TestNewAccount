@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Date;
+import java.util.ArrayList;
 
 public class TestNewAccount{
 	public static void main(String[] args){
@@ -7,7 +8,7 @@ public class TestNewAccount{
 		Account Account1 = new Account("Tom",1122,1000);
 		Transaction Transaction1 = new Transaction();
 	
-		Account1.setannualInterestRate(1.5);
+		Account1.setAnnualInterestRate(1.5);
 		
 		System.out.println(Account1.toString());
 		
@@ -23,7 +24,7 @@ public class TestNewAccount{
 		
 	}
 }	
- 
+
 class Account{
 
 	private int id ;
