@@ -36,6 +36,37 @@ class Account{
 		balance = balance1;
 	}
 	
+	public int getid(){
+		return id;
+	}
+	public void setid(int id1){
+		id = id1;
+	}
+	public double getBalance(){
+		return balance;
+	}
+	public void setBalance(double balance1){
+		balance = balance1;
+	}
+	
+	public double getAnnualInterestRate(){
+		return annualInterestRate;
+	}
+	public void setAnnualInterestRate(double annualInterestRate1){
+		annualInterestRate = annualInterestRate1;
+	}
+	
+	public double getMonthlyInterestRate(){
+		return annualInterestRate / 1200;
+	}
+	
+	public double getMonthlyInterest(){
+		return balance * getMonthlyInterestRate();
+	}
+	
+	public Date getDateCreated(){
+		return dateCreated;
+	}
 
 }
 
