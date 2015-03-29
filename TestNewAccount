@@ -18,6 +18,25 @@ public class TestNewAccount{
 
 class Account{
 
+	private int id ;
+	private double balance ;
+	private double annualInterestRate ;
+	private Date dateCreated;
+	private String name;
+	
+	Account(){
+		dateCreated = new Date();
+		id = 0;
+		balance = 0;
+		annualInterestRate = 0;	
+	}
+	Account(String name,int id1,double balance1){
+		dateCreated = new Date();
+		id = id1;
+		balance = balance1;
+	}
+	
+
 }
 
 class Transaction{
